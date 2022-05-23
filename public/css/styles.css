@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cars-carousal {
+  margin: 60px 0;
+}
+
+.cars-carousal > .body-title {
+  color: #808080;
+  margin: 0;
+}
+
+.cars-carousal > .model-details {
+  display: flex;
+  font-size: 10px;
+}
+
+.model-details > .model-name {
+  font-weight: bold;
+}
+
+.model-details > .model-type {
+  font-weight: lighter;
+  color: #808080;
+  margin-left: 5px;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.action-btns > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: large;
+  color: #326bb4;
+  margin: 5px;
+}
+
+.action-btns > button > svg {
+  margin-left: 5px;
+}
+
+.krmNah {
+  box-shadow: 0 0 1px 3px rgb(0, 0, 0) !important;
+  background-color: black !important;
+}
+
+.rec-dot:hover,
+.rec-dot:focus {
+  cursor: pointer;
+  box-shadow: 0 0 1px 3px rgb(0, 0, 0) !important;
+}
+
+.rec-arrow {
+  background: none !important;
+}
+
+.eWjCzc:hover,
+.eWjCzc:focus {
+  background: black !important;
+}
+
+.scroll-btns {
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+}
+
+.scroll-btns > button {
+  margin: 5px;
+  font-size: 1.6em;
+  background: none;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 2px 0px #333;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  line-height: 50px;
+  align-self: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.scroll-btns > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.type-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.type-filter > select {
+  padding: 0.5rem 2rem;
+  font-size: large;
+  outline: none;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    text-align: center;
+  }
+
+  .cars-carousal > .model-details {
+    flex-direction: column;
+  }
+}
